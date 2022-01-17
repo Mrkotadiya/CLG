@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=\, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <style>
+
+    </style> 
+    <script>
+        //fading out display paragraph with
+        $(document).ready(function(){
+        $(".out-click").ready(function(){
+            $("p.normal").fadeOut();
+            $("p.fast").fadeOut("fast");
+            $("p.slow").fadeOut("slow");
+            $("p.very-fast").fadeOut(50);
+            $("p.very-slow").fadeOut(2000);
+        });
+
+         //fading out display paragraph with
+         $(".in-click").ready(function(){
+            $("p.normal").fadeIn();
+            $("p.fast").fadeIn("fast");
+            $("p.slow").fadeIn("slow");
+            $("p.very-fast").fadeIn(50);
+            $("p.very-slow").fadeIn(2000);
+        });
+    }); 
+    </script>
+</head>
+<body>
+    
+    <button type="button" class="out-btn">Fade Out</button>
+    <button type="button" class="in-btn">Fade In</button>
+    <p class="very-fast"> Fade in/out very fast</p>
+    <p class="normal"> fade in/out default</p>
+    <p class="fast"> Fade in/out fast</p>
+    <p class="slow"> Fade in/out slow</p>
+    <p class="very-slow"> Fade in/out very slow</p>
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+$(document).ready(function(){
+    $(".out-btn").click(function(){
+        $("p.normal").toggle();
+        $("p.fast").toggle("fast");
+        $("p.slow").toggle("slow");
+        $("p.very-fast").toggle(50);
+        $("p.very-slow").toggle(2000);
+    });

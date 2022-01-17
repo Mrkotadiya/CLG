@@ -1,0 +1,37 @@
+<html>
+<head>
+	<title> Jquery</title> 
+		<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+		<style>
+		p{
+			padding:20px;
+			font: 21px calibri;
+			background:#f2f2f2;
+		}
+		p.highlight{
+			background:#009688;
+		}
+		</style>	
+	<script>
+		$(document).ready(function(){
+			$("p").mouseenter(function(){
+				$(this).addClass("highlight");
+				});
+		$("p").mouseenter(function(){		
+			$(this).removeClass("highlight");
+				
+			});
+		});
+	
+	
+	
+	</script>
+</head>
+<body>
+
+<p class="highlight">Most Welcome Mem</p>
+
+
+
+</body>
+</html>

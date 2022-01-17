@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <script>
+        
+        $(document).ready(function(){
+            $("select").change(function() {
+                var selectedoption = $(this).val();
+                alert(" you have selected-"+selectedoption);
+            });
+        });
+    </script>
+</head>
+<body>
+    
+<form action="onload">
+    <label> Selected City: </label>
+        <select>
+            <option>Surat</option>
+            <option>Ahemadabad</option>
+            <option>Junagadh</option>
+            <option>Rajkot</option>
+        </select>
+
+</form>
+
+</body>
+</html>
+
+
+
+
+
+<!-- $(document).ready(function(){
+    $("input").keydown(function(){  
+    $("input").css("backgound-color","red");
+  });
+    $(document).ready(function(){
+     $("input").keypress(function(){  
+       $("input").css("backgound-color","Yellow");
+ });
+
+}) -->

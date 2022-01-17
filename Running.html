@@ -1,0 +1,52 @@
+<html>
+<head>
+		<title> Runnig </title>
+		<script src="E:\NIrbhay\jquery1"</script>
+		<style>
+		img{
+			position:relative;
+			
+		}
+		</style>
+<script>
+	$(document).ready(function(){
+	//start animation
+		$(".Start-btn").click(function(){
+		$("img").animate({left:"+=500px"},5000);
+		});
+	//stop running animation
+	$(".stop-btn").click(function(){
+		$("img").stop);
+	});
+	
+	$(".back-btn").click(function(){
+		$("img").animate({left:"+=500px"},5000);
+		});
+	
+	//Reset to Default
+	$(".reset-btn").click(function(){
+		$("img").animate({left:"0"},10000);
+	});
+	
+	
+});
+
+
+</script>
+</head>
+
+<body>
+
+
+	<button type="button" class="start-btn">Start </button>
+	<button type="button" class="stop-btn">Stop </button>
+	<button type="button" class="back-btn">Back </button>
+	<button type="button" class="reset-btn">Reset </button>
+
+	<p>
+	
+		<img src="E:\NIrbhay\jquery1" alt="Jerry">
+	
+	</p>
+</body>
+</html>

@@ -1,0 +1,34 @@
+<html>
+<head>
+<title>Inline Jqava Script</title>
+<script>
+function validateform()
+{
+	let x=document.forms["form1"]["fname"].value;
+	if(name==null || name="")
+	{
+		alert("Name can't Be Blank ");
+		return false;
+	}
+	else if(password.length<6)
+	{
+	alert("Password Must Be At Least 6 Characters Long");
+	return false;
+	}
+}
+</script>
+</head>
+<body>
+	<form name="form1" action="form1.html" onsubmit="return validateform()" method="post">
+
+		<label>Name</label>
+		<input type="text" name="fname"><br><br>
+		<label>password</label>
+		<input type="password" name="pswd1"><br><br>
+		<input type="submit" value="submit">
+
+	</form>
+
+
+</body>
+</html>

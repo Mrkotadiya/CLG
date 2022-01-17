@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <style>
+
+    </style> 
+    <script>
+        $(document).ready(function(){
+            $("#one").click(function(){
+                $("#img").animate({
+                    left : 0
+                },5000);
+            });
+            $("#two").click(function(){
+                $("#img").animate({
+                    left : 500
+                },3000);
+            });
+            $("#Three").dblclick(function(){
+                $("#img").animate({
+                    top: 0
+                },1000);
+            });
+            $("#four").dblclick(function(){
+                $("#img").animate({
+                    top: 5001                    
+                },1000);
+            });
+            
+            $("#stop").mouseenter(function(){
+                $("img").stop();
+            });
+
+            $("#crossR").mouseleave(function(){
+                $("img").animate({
+                    top:0,
+                    left:500
+                });
+            });
+
+
+
+        });
+
+    </script>
+</head>
+<body>
+    
+    <button type="button" id="one">Right </button>
+    <button type="button" id="two">left </button>
+    <button type="button" id="Three">Up </button>
+    <button type="button" id="four">Down </button>
+    <button type="button" id="stop">STOP </button>
+    <button type="button" id="crossR">Cross-Right </button>
+    <button type="button" id="crossl">Cross-Left </button>
+    
+    
+    <br><br>
+    <!-- <img src="file:///E:/NIrbhay/Jerry.png" alt="jerry" id="img" style="position:relative;"> -->
+
+    <img src="Jerry.png" alt="jerry">
+
+</body>
+</html>
